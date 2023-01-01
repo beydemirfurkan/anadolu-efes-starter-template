@@ -1,0 +1,159 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css");
+
+*::-webkit-scrollbar {
+    width: 0.7em;
+  }
+  *::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 25px;
+  }
+  *::-webkit-scrollbar-thumb {
+    border-radius: 25px;
+    background-color: #25347A;
+    outline: 1px solid #25347A;
+  }
+
+* {
+    font-family: 'Jost', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    cursor: none;
+}
+
+body {
+    background-color: #EBEBEB;
+    overflow-x: hidden;
+    @media(max-width:600px) {
+        p {
+            font-size: 14px;
+        }
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+}
+
+a {
+    color: inherit;
+    &:hover {
+        color: inherit;
+    }
+}
+
+
+.object-cover {
+    object-fit: cover;
+}
+
+.fs-07 {
+    font-size: .7rem;
+}
+
+.fs-08 {
+    font-size: .8rem;
+}
+
+.fs-09 {
+    font-size: .9rem;
+}
+
+.fw-500 {
+    font-weight: 500;
+}
+
+.btn {
+    border-radius: 0;
+}
+
+.swiper {
+    width: 100%;
+        &-slide {
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+        }
+}
+
+.swiper-inner {
+    width: 100%;
+}
+
+.z-index1 {
+    z-index: 1;
+}
+
+.z-index2 {
+    z-index: 2;
+}
+
+.lh-custom {
+    line-height: 1.6;
+}
+
+
+.text-dark-primary {
+    color: #25347A!important;
+}
+
+
+.visibilty-hidden {
+    visibility: hidden;
+}
+
+
+@media(min-width:768px) {
+    .cursor {
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+        border: 1px solid black;
+        transition: all 200ms ease-out;
+        position: fixed;
+        pointer-events: none;
+        left: 0;
+        top: 0;
+        transform: translate(calc(-50% + 15px), -50%);
+        z-index: 3333333;
+      }
+      
+      .cursor2 {
+        width: 20px;
+        height: 20px;
+        border-radius: 100%;
+        background-color: black;
+        opacity: .3;
+        position: fixed;
+        transform: translate(-50%, -50%);
+        pointer-events: none;
+        transition: width .3s, height .3s, opacity .3s;
+        z-index: 3333333;
+      }
+      
+      .hover {
+        background-color: red;
+        opacity: 0.5;
+      }
+      
+      .cursorinnerhover {
+        width: 50px;
+        height: 50px;
+        opacity: .5;
+      }
+}
+
